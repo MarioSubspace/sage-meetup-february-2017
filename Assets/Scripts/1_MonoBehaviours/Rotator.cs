@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
@@ -9,7 +7,7 @@ public class Rotator : MonoBehaviour
 
 	void Update()
 	{
-		transform.RotateAround (rotationAxis, angularSpeed * Time.deltaTime);
+		transform.Rotate(rotationAxis, angularSpeed * Time.deltaTime);
 	}
 
 	void OnDrawGizmos()
